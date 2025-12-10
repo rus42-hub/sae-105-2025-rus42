@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Festival</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="/src/css/style.css" />
+
+    <!-- JS -->
+    <script type="module" src="/src/js/script.js"></script>
+  </head>
+
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+      <!-- Logo -->
+      <a class="header__link" href="/index.html">
+        <img
+          class="header__logo"
+          src="/assets/img/logo-festival.svg"
+          alt="Logo du festival"
+        />
+      </a>
+
+      <!-- Bouton Menu (SVG) -->
+      <button
+        class="header__menu-btn"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="mainNav"
+      >
+        <img src="/assets/icons/icon-menu.svg" alt="Menu" />
+      </button>
+
+      <!-- Menu -->
+      <nav class="header__menu menu" id="mainNav" hidden>
+        <ul class="menu__list u-list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link" href="/index.html">Accueil</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/about.html">À propos</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/programme.html">Programme</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/artistes.html">Artistes</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/scenes.html">Scènes</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/infos-pratiques.html">Infos pratiques</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+<!-- ===== HERO avec vidéo ===== -->
+<main>
+  <section class="hero">
+    <!-- Video background -->
+    <video class="hero__video" autoplay muted loop playsinline>
+      <source src="/assets/video/festival-video.mp4" type="video/mp4" />
+      Votre navigateur ne supporte pas la vidéo.
+    </video>
+
+    <!-- Overlay shapes + text -->
+    <div class="hero__overlay hero__overlay--top">
+      <p class="hero__text">Montbéliard</p>
+    </div>
+
+    <div class="hero__overlay hero__overlay--center">
+      <h1 class="hero__title">26.05 - 28.05</h1>
+    </div>
+
+    <div class="hero__overlay hero__overlay--bottom">
+      <p class="hero__text">BILLETERIE</p>
+    </div>
+  </section>
+</main>
+
+
+    <!-- ===== DOUBLE LINE (CSS) ===== -->
+    <div class="double-line"></div>
+
+    <!-- ===== STARS ===== -->
+    <section class="stars">
+      <img src="assets/icons/star.svg" alt="Étoile gauche" class="stars__icon stars__icon--small">
+      <img src="assets/icons/star.svg" alt="Étoile centrale" class="stars__icon stars__icon--large">
+      <img src="assets/icons/star.svg" alt="Étoile droite" class="stars__icon stars__icon--small">
+    </section>
+
+    <!-- ===== IMAGE LARGE ===== -->
+    <section class="image-block">
+      <img src="assets/img/festival-emblema.png" alt="Ambiance du festival" class="image-block__img">
+      
+      <!-- Double lines centered -->
+      <div class="double-line double-line--centered"></div>
+    </section>
+
+    <!-- ===== BIG TEXT ===== -->
+    <section class="intro-text">
+      <h2 class="intro-text__title">
+        Le festival qui fait vibrer Montbéliard au rythme des cuivres
+      </h2>
+
+      <!-- Single line -->
+      <div class="single-line"></div>
+    </section>
+
+    <!-- ===== STAR COMPOSITION ===== -->
+    <section class="stars-composition">
+
+     <img src="assets/icons/star.svg" alt="Étoile" class="star star--one">
+     <img src="assets/icons/star.svg" alt="Étoile" class="star star--two">
+     <img src="assets/icons/star.svg" alt="Étoile" class="star star--three">
+
+     <img src="assets/icons/trumpet.svg" alt="Trompette" class="instrument">
+    </section>
+
+    <!-- ===== CTA PROGRAMME ===== -->
+    <section class="cta-programme">
+      <a href="programme.html" class="cta-programme__btn">
+      Voir le programme
+     </a>
+    </section>
+
+       <!-- ===== ARTISTS CAROUSEL ===== -->
+<section class="artists-carousel">
+
+  <!-- Outer colored shape -->
+  <div class="artists-carousel__container">
+
+    <!-- Track (scrollable area) -->
+    <div class="artists-carousel__track">
+
+      <!-- Artist item -->
+      <article class="artist-item" data-name="Roosevelt">
+  <img src="assets/img/roosevelt.jpg" alt="Roosevelt" class="artist-item__img">
+  <div class="artist-item__overlay"></div>
+</article>
+
+<article class="artist-item" data-name="L’Impératrice">
+  <img src="assets/img/limperatrice.png" alt="L’Impératrice" class="artist-item__img">
+  <div class="artist-item__overlay"></div>
+</article>
+
+<article class="artist-item" data-name="En Attendant Ana">
+  <img src="assets/img/en-attendant-ana.jpg" alt="En Attendant Ana" class="artist-item__img">
+  <div class="artist-item__overlay"></div>
+</article>
+
+<article class="artist-item" data-name="Youn Sun Nah">
+  <img src="assets/img/youn-sun-nah.jpg" alt="Youn Sun Nah" class="artist-item__img">
+  <div class="artist-item__overlay"></div>
+</article>
+
+<!-- Central artist -->
+<article class="artist-item artist-item--active" data-name="Nicola Conte">
+  <img src="assets/img/nicola-conte.jpg" alt="Nicola Conte" class="artist-item__img">
+</article>
+
+<article class="artist-item" data-name="Caramelo de Cuba">
+  <img src="assets/img/caramelo-de-cuba.png" alt="Caramelo de Cuba" class="artist-item__img">
+  <div class="artist-item__overlay"></div>
+</article>
+
+<article class="artist-item" data-name="Erik Truffaz">
+  <img src="assets/img/erik-truffaz.jpg" alt="Erik Truffaz" class="artist-item__img">
+  <div class="artist-item__overlay"></div>
+</article>
+
+<article class="artist-item" data-name="Matteo Mancuso">
+  <img src="assets/img/matteo-mancuso.jpg" alt="Matteo Mancuso" class="artist-item__img">
+  <div class="artist-item__overlay"></div>
+</article>
+
+<article class="artist-item" data-name="Jacob Collier">
+  <img src="assets/img/jacob-collier.jpg" alt="Jacob Collier" class="artist-item__img">
+  <div class="artist-item__overlay"></div>
+</article>
+
+
+    </div>
+
+    <!-- Name bar under central image -->
+    <div class="artists-carousel__name-bar">
+      Nicola Conte
+    </div>
+
+    <!-- Pagination dots -->
+    <div class="artists-carousel__dots">
+
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot dot--active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+
+    </div>
+
+    <!-- Button -->
+    <a href="artistes.html" class="artists-carousel__btn">
+      Voir tous les artistes
+    </a>
+
+  </div>
+
+</section>
+    <!-- ===== INFOS PRATIQUES ===== -->
+<section class="infos">
+
+  <h2 class="infos__title">Infos pratiques</h2>
+
+  <div class="infos__icons">
+
+    <div class="infos__item">
+      <img src="assets/icons/icon-accessible.svg" alt="Accessible" class="infos__icon">
+      <p class="infos__label">Accessible</p>
+    </div>
+
+    <div class="infos__item">
+      <img src="assets/icons/icon-hotel.svg" alt="Hôtel" class="infos__icon">
+      <p class="infos__label">Hôtels</p>
+    </div>
+
+    <div class="infos__item">
+      <img src="assets/icons/icon-bus.svg" alt="Transport" class="infos__icon">
+      <p class="infos__label">Bus</p>
+    </div>
+
+    <div class="infos__item">
+      <img src="assets/icons/icon-faq.svg" alt="FAQ" class="infos__icon">
+      <p class="infos__label">FAQ</p>
+    </div>
+
+  </div>
+
+  <a href="infos-pratiques.html" class="infos__btn">
+    Infos utiles
+  </a>
+
+</section>
+
+<!-- ===== PARTENAIRES ===== -->
+<section class="partners">
+
+  <h2 class="partners__title">Partenaires</h2>
+
+  <div class="partners__grid">
+
+    <div class="partners__item">
+      <img src="assets/img/logo-bourgogne-franche-comte.png" alt="Bourgogne Franche-Comté">
+    </div>
+
+    <div class="partners__item">
+      <img src="assets/img/logo-ville-montbeliard.jpg" alt="Ville de Montbéliard">
+    </div>
+
+    <div class="partners__item">
+      <img src="assets/img/partn-montb-agglo.webp" alt="Montbéliard Agglomération">
+    </div>
+
+    <div class="partners__item">
+      <img src="assets/img/est-republic.png" alt="L’Est Républicain">
+    </div>
+
+    <div class="partners__item">
+      <img src="assets/img/cd25-doubs.jpg" alt="CD25 Doubs">
+    </div>
+
+    <div class="partners__item">
+      <img src="assets/img/utbm-forward-2.jpg" alt="UTBM">
+    </div>
+
+    <div class="partners__item">
+      <img src="assets/img/france-bleu-belfortmontbeliard.jpg" alt="France Bleu Belfort Montbéliard">
+    </div>
+
+    <div class="partners__item">
+      <img src="assets/img/logo-moloco-sous-titre.jpg" alt="Le Moloco">
+    </div>
+
+  </div>
+
+</section>
+
+   <!-- ===== FOOTER ===== -->
+<footer class="footer">
+
+  <!-- Logo + social -->
+  <div class="footer__top">
+
+    <img src="assets/img/logo-festival.svg" alt="Logo du festival" class="footer__logo">
+
+    <div class="footer__socials">
+      <a href="#" aria-label="Email">
+        <img src="assets/icons/icon-mail.svg" alt="Email">
+      </a>
+
+      <a href="#" aria-label="YouTube">
+        <img src="assets/icons/icon-youtube.svg" alt="YouTube">
+      </a>
+
+      <a href="#" aria-label="Instagram">
+        <img src="assets/icons/icon-instagram.svg" alt="Instagram">
+      </a>
+
+      <a href="#" aria-label="TikTok">
+        <img src="assets/icons/icon-tiktok.svg" alt="TikTok">
+      </a>
+
+      <a href="#" aria-label="Facebook">
+        <img src="assets/icons/icon-facebook.svg" alt="Facebook">
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Legal links -->
+  <div class="footer__links">
+    <a href="#" class="footer__link">Conditions générales</a>
+    <a href="#" class="footer__link">Gérer les cookies</a>
+  </div>
+
+  <!-- Bottom text -->
+  <div class="footer__bottom">
+    <p>
+      Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département 
+      <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank">
+        MMi de Montbéliard
+      </a>
+    </p>
+  </div>
+
+</footer>
+
+
+  </main>
+
+  <!-- JS menu -->
+  <script src="src/js/menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!-- ===== HEADER ===== -->
+<header class="header">
+  <!-- Logo -->
+  <a class="header__link" href="/index.html">
+    <img
+      class="header__logo"
+      src="/assets/img/logo-festival.svg"
+      alt="Logo du festival"
+    />
+  </a>
+
+  <!-- Bouton Menu (SVG) -->
+  <button
+    class="header__menu-btn"
+    aria-label="Ouvrir le menu"
+    aria-expanded="false"
+    aria-controls="mainNav"
+  >
+    <img src="/assets/icons/icon-menu.svg" alt="Menu" />
+  </button>
+
+  <!-- Menu -->
+  <nav class="header__menu menu" id="mainNav" hidden>
+    <ul class="menu__list u-list-unstyled">
+      <li class="menu__item">
+        <a class="menu__link" href="/index.html">Accueil</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="/about.html">À propos</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="/programme.html">Programme</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="/artistes.html">Artistes</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="/scenes.html">Scènes</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="/infos-pratiques.html">Infos pratiques</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="/contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+   <!-- ===== PAGE TITLE ===== -->
+<section class="page-title page-title--yellow">
+  <h1>Programme</h1>
+</section>
+
+
+<!-- ===== FILTERS ===== -->
+<section class="filters">
+
+  <!-- Scène filter -->
+  <div class="filter filter--scene">
+    <button class="filter__btn" aria-expanded="false">
+      Scène
+      <img src="/assets/icons/icon-arrow-down.svg" alt="Dérouler" class="filter__icon">
+    </button>
+    <ul class="filter__list" hidden>
+      <li class="filter__item">La Roselière</li>
+      <li class="filter__item">Le Pré de la Rose</li>
+    </ul>
+  </div>
+
+  <!-- Jour filter -->
+  <div class="filter filter--day">
+    <button class="filter__btn" aria-expanded="false">
+      Jour
+      <img src="/assets/icons/icon-arrow-down.svg" alt="Dérouler" class="filter__icon">
+    </button>
+    <ul class="filter__list" hidden>
+      <li class="filter__item">26 juin</li>
+      <li class="filter__item">27 juin</li>
+      <li class="filter__item">28 juin</li>
+    </ul>
+  </div>
+
+  <!-- Genre filter -->
+  <div class="filter filter--genre">
+    <button class="filter__btn" aria-expanded="false">
+      Genre
+      <img src="/assets/icons/icon-arrow-down.svg" alt="Dérouler" class="filter__icon">
+    </button>
+    <ul class="filter__list" hidden>
+      <li class="filter__item">Jazz</li>
+      <li class="filter__item">Électro-jazz</li>
+      <li class="filter__item">Jazz fusion</li>
+      <li class="filter__item">Vocal jazz</li>
+      <li class="filter__item">Indie pop</li>
+      <li class="filter__item">Chill-pop</li>
+      <li class="filter__item">Disco-pop</li>
+    </ul>
+  </div>
+
+</section>
+
+
+    <!-- ===== ARTISTS GRID ===== -->
+<section class="artists-grid">
+
+  <article class="artist-card" data-scene="La Roselière" data-day="26 juin" data-genre="Jazz">
+    <img src="/assets/img/nicola-conte.jpg" alt="Nicola Conte">
+    <div class="artist-card__name">Nicola Conte</div>
+  </article>
+
+  <article class="artist-card" data-scene="La Roselière" data-day="26 juin" data-genre="Jazz">
+    <img src="/assets/img/erik-truffaz.jpg" alt="Erik Truffaz">
+    <div class="artist-card__name">Erik Truffaz</div>
+  </article>
+
+  <article class="artist-card" data-scene="Le Pré de la Rose" data-day="27 juin" data-genre="Électro-jazz">
+    <img src="/assets/img/roosevelt.jpg" alt="Roosevelt">
+    <div class="artist-card__name">Roosevelt</div>
+  </article>
+
+  <!-- остальные карточки добавляем по аналогии -->
+</section>
+
+     <!-- ===== DOWNLOAD BUTTON ===== -->
+<div class="download-program">
+  <a href="https://drive.google.com/uc?export=download&id=1HYnk41zDW9pG8ZAb17EDZM4bVCK75e0M" class="btn btn--primary" target="_blank">
+    Télécharger le programme en PDF
+  </a>
+</div>
+
+   <!-- ===== FOOTER ===== -->
+<footer class="footer">
+
+  <!-- Logo + social -->
+  <div class="footer__top">
+
+    <img src="assets/img/logo-festival.svg" alt="Logo du festival" class="footer__logo">
+
+    <div class="footer__socials">
+      <a href="#" aria-label="Email">
+        <img src="assets/icons/icon-mail.svg" alt="Email">
+      </a>
+
+      <a href="#" aria-label="YouTube">
+        <img src="assets/icons/icon-youtube.svg" alt="YouTube">
+      </a>
+
+      <a href="#" aria-label="Instagram">
+        <img src="assets/icons/icon-instagram.svg" alt="Instagram">
+      </a>
+
+      <a href="#" aria-label="TikTok">
+        <img src="assets/icons/icon-tiktok.svg" alt="TikTok">
+      </a>
+
+      <a href="#" aria-label="Facebook">
+        <img src="assets/icons/icon-facebook.svg" alt="Facebook">
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Legal links -->
+  <div class="footer__links">
+    <a href="#" class="footer__link">Conditions générales</a>
+    <a href="#" class="footer__link">Gérer les cookies</a>
+  </div>
+
+  <!-- Bottom text -->
+  <div class="footer__bottom">
+    <p>
+      Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département 
+      <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank">
+        MMi de Montbéliard
+      </a>
+    </p>
+  </div>
+
+</footer>
+
+
+  </main>
+
+  <!-- JS menu -->
+  <script src="src/js/menu.js"></script>
+
+</body>
+</html>

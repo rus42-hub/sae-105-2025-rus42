@@ -1,0 +1,298 @@
+  <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artistes - Festival</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <a class="header__link" href="/index.html">
+      <img class="header__logo" src="/assets/img/logo-festival.svg" alt="Logo du festival">
+    </a>
+    <button class="header__menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+      <img src="/assets/icons/icon-menu.svg" alt="Menu">
+    </button>
+    <nav class="header__menu menu" id="mainNav" hidden>
+      <ul class="menu__list u-list-unstyled">
+        <li class="menu__item"><a class="menu__link" href="/index.html">Accueil</a></li>
+        <li class="menu__item"><a class="menu__link" href="/about.html">À propos</a></li>
+        <li class="menu__item"><a class="menu__link" href="/programme.html">Programme</a></li>
+        <li class="menu__item"><a class="menu__link" href="/artistes.html">Artistes</a></li>
+        <li class="menu__item"><a class="menu__link" href="/scenes.html">Scènes</a></li>
+        <li class="menu__item"><a class="menu__link" href="/infos-pratiques.html">Infos pratiques</a></li>
+        <li class="menu__item"><a class="menu__link" href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== PAGE TITLE ===== -->
+  <section class="page-title page-title--gray">
+    <h1>Artistes</h1>
+  </section>
+
+  <!-- ===== ARTISTS LIST ===== -->
+  <main class="artists-list">
+
+    <!-- Artist card (repeat 9 times) -->
+    <article class="artist-card">
+      <div class="artist-card__img">
+        <img src="/assets/img/roosevelt.jpg" alt="Roosevelt">
+      </div>
+      <div class="artist-card__info">
+        <div class="artist-card__header">
+          <h2 class="artist-card__name">Roosevelt</h2>
+          <a href="/artiste.html" class="artist-card__link">
+            <img src="/assets/icons/icon-arrow-right.svg" alt="Voir la page de l'artiste">
+          </a>
+        </div>
+        <div class="artist-card__details">
+          <span class="artist-card__genre">Chill-pop</span>
+          <span class="artist-card__dates">26 - 28 juin</span>
+          <span class="artist-card__scene">Le Pré de la Rose</span>
+        </div>
+        <hr class="artist-card__divider">
+        <p class="artist-card__description">
+          Producteur allemand qui crée une ambiance douce et dansante, mêlant synthés et chill-pop.
+        </p>
+      </div>
+    </article>
+
+    
+    <article class="artist-card">
+      <div class="artist-card__img">
+        <img src="/assets/img/en-attendant-ana.jpg" alt="En Attendant Ana">
+      </div>
+      <div class="artist-card__info">
+        <div class="artist-card__header">
+          <h2 class="artist-card__name">En Attendant Ana</h2>
+          <a href="/artiste.html" class="artist-card__link">
+            <img src="/assets/icons/icon-arrow-right.svg" alt="Voir la page de l'artiste">
+          </a>
+        </div>
+        <div class="artist-card__details">
+          <span class="artist-card__genre">indie pop</span>
+          <span class="artist-card__dates">26 - 28 juin</span>
+          <span class="artist-card__scene">Le Pré de la Rose</span>
+        </div>
+        <hr class="artist-card__divider">
+        <p class="artist-card__description">
+          Un groupe parisien au style chaleureux, porté par une indie pop délicate et lumineuse.
+        </p>
+      </div>
+    </article>
+
+    
+    <article class="artist-card">
+      <div class="artist-card__img">
+        <img src="/assets/img/caramelo-de-cuba.png" alt="Caramelo de Cuba">
+      </div>
+      <div class="artist-card__info">
+        <div class="artist-card__header">
+          <h2 class="artist-card__name">Caramelo de Cuba</h2>
+          <a href="/artiste.html" class="artist-card__link">
+            <img src="/assets/icons/icon-arrow-right.svg" alt="Voir la page de l'artiste">
+          </a>
+        </div>
+        <div class="artist-card__details">
+          <span class="artist-card__genre">jazz fusion</span>
+          <span class="artist-card__dates">26 - 28 juin</span>
+          <span class="artist-card__scene">Le Pré de la Rose</span>
+        </div>
+        <hr class="artist-card__divider">
+        <p class="artist-card__description">
+          Énergie chaleureuse et rythmes latins, une fusion vibrante dans un style jazz fusion.
+        </p>
+      </div>
+    </article>
+
+
+    <article class="artist-card">
+      <div class="artist-card__img">
+        <img src="/assets/img/limperatrice.png" alt="L’Impératrice">
+      </div>
+      <div class="artist-card__info">
+        <div class="artist-card__header">
+          <h2 class="artist-card__name">L’Impératrice</h2>
+          <a href="/artiste.html" class="artist-card__link">
+            <img src="/assets/icons/icon-arrow-right.svg" alt="Voir la page de l'artiste">
+          </a>
+        </div>
+        <div class="artist-card__details">
+          <span class="artist-card__genre">disco-pop</span>
+          <span class="artist-card__dates">27 - 28 juin</span>
+          <span class="artist-card__scene">Le Pré de la Rose</span>
+        </div>
+        <hr class="artist-card__divider">
+        <p class="artist-card__description">
+          Groupe français aux sons doux et rétro, parfait mélange de disco-pop et d’élégance moderne.
+        </p>
+      </div>
+    </article>
+
+
+    <article class="artist-card">
+      <div class="artist-card__img">
+        <img src="/assets/img/youn-sun-nah.jpg" alt="Youn Sun Nah">
+      </div>
+      <div class="artist-card__info">
+        <div class="artist-card__header">
+          <h2 class="artist-card__name">Youn Sun Nah</h2>
+          <a href="/artiste.html" class="artist-card__link">
+            <img src="/assets/icons/icon-arrow-right.svg" alt="Voir la page de l'artiste">
+          </a>
+        </div>
+        <div class="artist-card__details">
+          <span class="artist-card__genre">vocal jazz</span>
+          <span class="artist-card__dates">26,  28 juin</span>
+          <span class="artist-card__scene">La Roselière</span>
+        </div>
+        <hr class="artist-card__divider">
+        <p class="artist-card__description">
+          Voix aérienne et expressive, Youn Sun Nah apporte une touche poétique de vocal jazz moderne.
+        </p>
+      </div>
+    </article>
+
+
+
+
+        <article class="artist-card">
+      <div class="artist-card__img">
+        <img src="/assets/img/nicola-conte.jpg" alt="Nicola Conte">
+      </div>
+      <div class="artist-card__info">
+        <div class="artist-card__header">
+          <h2 class="artist-card__name">Nicola Conte</h2>
+          <a href="/artiste.html" class="artist-card__link">
+            <img src="/assets/icons/icon-arrow-right.svg" alt="Voir la page de l'artiste">
+          </a>
+        </div>
+        <div class="artist-card__details">
+          <span class="artist-card__genre">jazz</span>
+          <span class="artist-card__dates">26 - 27 juin</span>
+          <span class="artist-card__scene">La Roselière</span>
+        </div>
+        <hr class="artist-card__divider">
+        <p class="artist-card__description">
+          Producteur italien au style élégant, mêlant groove et ambiance cinématique dans un jazz raffiné.
+        </p>
+      </div>
+    </article>
+
+
+
+
+
+
+        <article class="artist-card">
+      <div class="artist-card__img">
+        <img src="/assets/img/matteo-mancuso.jpg" alt="Matteo Mancuso">
+      </div>
+      <div class="artist-card__info">
+        <div class="artist-card__header">
+          <h2 class="artist-card__name">Matteo Mancuso</h2>
+          <a href="/artiste.html" class="artist-card__link">
+            <img src="/assets/icons/icon-arrow-right.svg" alt="Voir la page de l'artiste">
+          </a>
+        </div>
+        <div class="artist-card__details">
+          <span class="artist-card__genre">jazz fusion</span>
+          <span class="artist-card__dates">26,  28 juin</span>
+          <span class="artist-card__scene">La Roselière</span>
+        </div>
+        <hr class="artist-card__divider">
+        <p class="artist-card__description">
+          Jeune prodige de la guitare, il offre un jeu virtuose et lumineux dans un style jazz fusion.
+        </p>
+      </div>
+    </article>
+
+
+
+
+
+        <article class="artist-card">
+      <div class="artist-card__img">
+        <img src="/assets/img/erik-truffaz.jpg" alt="Erik Truffaz">
+      </div>
+      <div class="artist-card__info">
+        <div class="artist-card__header">
+          <h2 class="artist-card__name">Erik Truffaz</h2>
+          <a href="/artiste.html" class="artist-card__link">
+            <img src="/assets/icons/icon-arrow-right.svg" alt="Voir la page de l'artiste">
+          </a>
+        </div>
+        <div class="artist-card__details">
+          <span class="artist-card__genre">electro-jazz</span>
+          <span class="artist-card__dates">27 - 28 juin</span>
+          <span class="artist-card__scene">La Roselière</span>
+        </div>
+        <hr class="artist-card__divider">
+        <p class="artist-card__description">
+          Trompettiste français reconnu pour son son hypnotique et ses explorations electro-jazz.
+        </p>
+      </div>
+    </article>
+
+    <article class="artist-card">
+      <div class="artist-card__img">
+        <img src="/assets/img/jacob-collier.jpg" alt="Jacob Collier">
+      </div>
+      <div class="artist-card__info">
+        <div class="artist-card__header">
+          <h2 class="artist-card__name">Jacob Collier</h2>
+          <a href="/artiste.html" class="artist-card__link">
+            <img src="/assets/icons/icon-arrow-right.svg" alt="Voir la page de l'artiste">
+          </a>
+        </div>
+        <div class="artist-card__details">
+          <span class="artist-card__genre">vocal jazz / jazz fusion</span>
+          <span class="artist-card__dates">27 juin</span>
+          <span class="artist-card__scene">La Roselière</span>
+        </div>
+        <hr class="artist-card__divider">
+        <p class="artist-card__description">
+          Musicien multi-instrumentiste, connu pour ses harmonies innovantes entre vocal jazz et jazz fusion.
+        </p>
+      </div>
+    </article>
+
+
+   
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <a class="footer__logo" href="/index.html">
+        <img src="/assets/img/logo-festival.svg" alt="Logo du festival">
+      </a>
+      <div class="footer__socials">
+        <a href="mailto:contact@example.com"><img src="/assets/icons/icon-mail.svg" alt="Mail"></a>
+        <a href="#"><img src="/assets/icons/icon-youtube.svg" alt="YouTube"></a>
+        <a href="#"><img src="/assets/icons/icon-instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="#"><img src="/assets/icons/icon-tiktok.svg" alt="TikTok"></a>
+        <a href="#"><img src="#"><img src="/assets/icons/icon-facebook.svg" alt="Facebook"></a>
+      </div>
+    </div>
+    <div class="footer__middle">
+      <p>Conditions générales</p>
+      <p>Gérer les cookies</p>
+    </div>
+    <div class="footer__bottom">
+      <p>
+        Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département 
+        <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank">
+          MMi de Montbéliard
+        </a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
