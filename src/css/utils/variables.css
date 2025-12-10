@@ -15,6 +15,13 @@
   --color-black: #000000;
   --color-white: #FFFFFF;
 
+
+  /* ================================
+   Gradients
+   ================================ */
+  --gradient-menu: linear-gradient(90deg, #FDF3CD 0.02%, #FFF9AB 47.12%, #F0DDC8 99.97%);
+
+
   /* ===== Font Family ===== */
   --font-primary: "DM Serif Text", serif;
 
