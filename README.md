@@ -6,7 +6,7 @@
 - NOM : Ruslana
 - PRÉNOM : Budniak
 - GROUPE : C1
-- URL du site :
+- URL du site : https://sae-105-2025-ruslana42.netlify.app/
 - URL FIGMA :  https://www.figma.com/design/mUx3G5HxunWpBt3XhMXT12/Budniak-Ruslana-Maquette-festival?node-id=2-17&t=cF1iUceN3iQHZkch-1
 
 ## Sujet
