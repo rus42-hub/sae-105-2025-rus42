@@ -82,87 +82,105 @@
 
    <main>
 
-   <!-- ===== PAGE TITLE ===== -->
-<section class="page-title page-title--yellow">
-  <h1>Programme</h1>
-</section>
+<!-- ===== PAGE TITLE ===== -->
 
 
-<!-- ===== FILTERS ===== -->
-<section class="filters">
+<!-- ===== BACKGROUND PANEL ===== -->
+<div class="programme-panel">
+  <div class="programme-panel__title">Programme</div>
 
-  <!-- Scène filter -->
-  <div class="filter filter--scene">
-    <button class="filter__btn" aria-expanded="false">
-      Scène
-      <img src="/assets/icons/icon-arrow-down.svg" alt="Dérouler" class="filter__icon">
-    </button>
-    <ul class="filter__list" hidden>
-      <li class="filter__item">La Roselière</li>
-      <li class="filter__item">Le Pré de la Rose</li>
-    </ul>
+  <!-- ===== FILTERS ===== -->
+  <section class="filters">
+    <!-- Scène filter -->
+    <div class="filter filter--scene">
+      <button class="filter__btn" aria-expanded="false">
+        Scène
+        <img src="/assets/icons/icon-arrow-down.svg" alt="Dérouler" class="filter__icon">
+      </button>
+      <ul class="filter__list" hidden>
+        <li class="filter__item">La Roselière</li>
+        <li class="filter__item">Le Pré de la Rose</li>
+      </ul>
+    </div>
+
+    <!-- Jour filter -->
+    <div class="filter filter--day">
+      <button class="filter__btn" aria-expanded="false">
+        Jour
+        <img src="/assets/icons/icon-arrow-down.svg" alt="Dérouler" class="filter__icon">
+      </button>
+      <ul class="filter__list" hidden>
+        <li class="filter__item">26 juin</li>
+        <li class="filter__item">27 juin</li>
+        <li class="filter__item">28 juin</li>
+      </ul>
+    </div>
+
+    <!-- Genre filter -->
+    <div class="filter filter--genre">
+      <button class="filter__btn" aria-expanded="false">
+        Genre
+        <img src="/assets/icons/icon-arrow-down.svg" alt="Dérouler" class="filter__icon">
+      </button>
+      <ul class="filter__list" hidden>
+        <li class="filter__item">Jazz</li>
+        <li class="filter__item">Électro-jazz</li>
+        <li class="filter__item">Jazz fusion</li>
+        <li class="filter__item">Vocal jazz</li>
+        <li class="filter__item">Indie pop</li>
+        <li class="filter__item">Chill-pop</li>
+        <li class="filter__item">Disco-pop</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== ARTISTS GRID ===== -->
+  <section class="artists-grid">
+    <!-- La Roselière -->
+    <article class="artist-card" data-scene="La Roselière" data-day="26 juin" data-genre="Jazz">
+      <div class="artist-card__img" style="background-image:url('/assets/img/youn-sun-nah.jpg')"></div>
+      <div class="artist-card__name">Youn Sun Nah</div>
+    </article>
+
+    <article class="artist-card" data-scene="La Roselière" data-day="26 juin" data-genre="Jazz">
+      <div class="artist-card__img" style="background-image:url('/assets/img/nicola-conte.jpg')"></div>
+      <div class="artist-card__name">Nicola Conte</div>
+    </article>
+
+    <article class="artist-card" data-scene="La Roselière" data-day="26 juin" data-genre="Jazz">
+      <div class="artist-card__img" style="background-image:url('/assets/img/matteo-mancuso.jpg')"></div>
+      <div class="artist-card__name">Matteo Mancuso</div>
+    </article>
+
+    <!-- Le Pré de la Rose -->
+    <article class="artist-card" data-scene="Le Pré de la Rose" data-day="27 juin" data-genre="Électro-jazz">
+      <div class="artist-card__img" style="background-image:url('/assets/img/roosevelt.jpg')"></div>
+      <div class="artist-card__name">Roosevelt</div>
+    </article>
+
+    <article class="artist-card" data-scene="Le Pré de la Rose" data-day="27 juin" data-genre="Électro-jazz">
+      <div class="artist-card__img" style="background-image:url('/assets/img/en-attendant-ana.jpg')"></div>
+      <div class="artist-card__name">En Attendant Ana</div>
+    </article>
+
+    <article class="artist-card" data-scene="Le Pré de la Rose" data-day="27 juin" data-genre="Électro-jazz">
+      <div class="artist-card__img" style="background-image:url('/assets/img/caramelo-de-cuba.png')"></div>
+      <div class="artist-card__name">Caramelo de Cuba</div>
+    </article>
+
+  </section>
+
+  <!-- ===== DOWNLOAD BUTTON ===== -->
+  <div class="download-program">
+    <a href="https://drive.google.com/uc?export=download&id=1HYnk41zDW9pG8ZAb17EDZM4bVCK75e0M" class="btn btn--primary" target="_blank">
+      <span class="btn__line1">Télécharger</span>
+      <span class="btn__line2">Programme en PDF</span>
+    </a>
   </div>
 
-  <!-- Jour filter -->
-  <div class="filter filter--day">
-    <button class="filter__btn" aria-expanded="false">
-      Jour
-      <img src="/assets/icons/icon-arrow-down.svg" alt="Dérouler" class="filter__icon">
-    </button>
-    <ul class="filter__list" hidden>
-      <li class="filter__item">26 juin</li>
-      <li class="filter__item">27 juin</li>
-      <li class="filter__item">28 juin</li>
-    </ul>
-  </div>
-
-  <!-- Genre filter -->
-  <div class="filter filter--genre">
-    <button class="filter__btn" aria-expanded="false">
-      Genre
-      <img src="/assets/icons/icon-arrow-down.svg" alt="Dérouler" class="filter__icon">
-    </button>
-    <ul class="filter__list" hidden>
-      <li class="filter__item">Jazz</li>
-      <li class="filter__item">Électro-jazz</li>
-      <li class="filter__item">Jazz fusion</li>
-      <li class="filter__item">Vocal jazz</li>
-      <li class="filter__item">Indie pop</li>
-      <li class="filter__item">Chill-pop</li>
-      <li class="filter__item">Disco-pop</li>
-    </ul>
-  </div>
-
-</section>
-
-
-    <!-- ===== ARTISTS GRID ===== -->
-<section class="artists-grid">
-
-  <article class="artist-card" data-scene="La Roselière" data-day="26 juin" data-genre="Jazz">
-    <img src="/assets/img/nicola-conte.jpg" alt="Nicola Conte">
-    <div class="artist-card__name">Nicola Conte</div>
-  </article>
-
-  <article class="artist-card" data-scene="La Roselière" data-day="26 juin" data-genre="Jazz">
-    <img src="/assets/img/erik-truffaz.jpg" alt="Erik Truffaz">
-    <div class="artist-card__name">Erik Truffaz</div>
-  </article>
-
-  <article class="artist-card" data-scene="Le Pré de la Rose" data-day="27 juin" data-genre="Électro-jazz">
-    <img src="/assets/img/roosevelt.jpg" alt="Roosevelt">
-    <div class="artist-card__name">Roosevelt</div>
-  </article>
-
-  <!-- остальные карточки добавляем по аналогии -->
-</section>
-
-     <!-- ===== DOWNLOAD BUTTON ===== -->
-<div class="download-program">
-  <a href="https://drive.google.com/uc?export=download&id=1HYnk41zDW9pG8ZAb17EDZM4bVCK75e0M" class="btn btn--primary" target="_blank">
-    Télécharger le programme en PDF
-  </a>
 </div>
+
+
 
    <!-- ===== FOOTER ===== -->
 <footer class="footer">
@@ -219,6 +237,7 @@
 
   <!-- JS menu -->
   <script src="src/js/menu.js"></script>
+  <script src="src/js/filters.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,152 @@
+/* ===== BACKGROUND PANEL ===== */
+.programme-panel {
+  position: relative;
+  width: 328px;
+  min-height: 292px;
+  margin: 30px auto 0;
+  background: #FDF3CD;
+  border-radius: 20px;
+  padding-bottom: 44px;
+  margin-bottom: 200px;
+}
+
+/* Заголовок Programme */
+.programme-panel__title {
+  width: 139px;
+  
+  margin: 40px auto 0;
+  padding-top: 21px;
+  color: #E34343;
+  text-align: center;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_3, 24px);
+  font-weight: var(--FontFamily_1-FontWeights-Weight_2, 400);
+  line-height: 95%;
+  letter-spacing: 0.96px;
+}
+
+/* ===== FILTERS ===== */
+.filters {
+  display: flex;
+  justify-content: flex-start;
+  gap: 49px;
+  margin-top: 37px;
+  padding-left: 17px;
+}
+
+.filter__btn {
+  position: relative;
+  height: 22px;
+  padding: 0 8px 0 8px;
+  border-radius: 20px;
+  background: #FBF9F6;
+  box-shadow: 3px 7px 14px 0 #FFF9AB;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_7, 11px);
+  font-weight: var(--FontFamily_1-FontWeights-Weight_2, 400);
+  line-height: normal;
+  color: #534F4B;
+}
+
+.filter__icon {
+  width: 22px;
+  height: 22px;
+  margin-left: 2px;
+}
+
+.filter__list {
+  margin-top: 11px;
+  list-style: none;
+  padding: 8px 0;
+  width: max-content;
+  background: #FBF9F6;
+  border-radius: 20px;
+  box-shadow: 3px 7px 14px 0 #FFF9AB;
+  text-align: center;
+}
+
+.filter__item {
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_7, 11px);
+  font-weight: var(--FontFamily_1-FontWeights-Weight_2, 400);
+  color: #534F4B;
+  line-height: normal;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+/* ===== ARTISTS GRID ===== */
+.artists-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0 0 34px; /* отступ слева для первой фотки */
+  gap: 36px 36px;
+}
+
+.artist-card {
+  display: none; 
+  flex-direction: column;
+  align-items: center;
+  width: 64px;
+}
+
+.artist-card__img {
+  width: 64px;
+  height: 64px;
+  aspect-ratio: 1/1;
+  border-radius: 77.5px;
+  background-color: lightgray;
+  background-size: cover;
+  background-position: center;
+}
+
+.artist-card__name {
+  width: 67px;
+  height: 10px;
+  text-align: center;
+  margin-top: 4px;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_7, 11px);
+  font-weight: var(--FontFamily_1-FontWeights-Weight_2, 400);
+  line-height: 113.1%;
+  color: #534F4B;
+}
+
+/* ===== DOWNLOAD BUTTON ===== */
+.download-program {
+  text-align: center;
+  margin-top: 54px;
+}
+
+.download-program .btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 243px;
+  height: 73px;
+  background: #534F4B;
+  border-radius: 20px;
+  box-shadow: 3px 7px 14px 0 rgba(0,0,0,0.25);
+  text-decoration: none;
+}
+
+.download-program .btn__line1 {
+  color: #FBF9F6;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_3, 24px);
+  font-weight: var(--FontFamily_1-FontWeights-Weight_2, 400);
+  line-height: 121.01%;
+}
+
+.download-program .btn__line2 {
+  color: #E34343;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_3, 24px);
+  font-weight: var(--FontFamily_1-FontWeights-Weight_2, 400);
+  line-height: 121.01%;
+}
