@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Non trouvée</title>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+  <h1>404 — Page Non trouvée</h1>
+  <p>La page que vous cherchez n'existe pas ou a été déplacée.</p>
+
+  <form action="https://duckduckgo.com/" method="GET" 
+        x-data="{ q:'' }" 
+        x-on:submit="q = q + ' site:mmimontbeliard.com'">
+    <label for="q">Rechercher sur le site :</label>
+    <input type="text" id="q" name="q" x-model="q">
+    <button type="submit">Rechercher</button>
+  </form>
+
+  <p><a href="/">Retour à l'accueil</a></p>
+</body>
+</html>
