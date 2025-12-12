@@ -32,3 +32,8 @@ filterItems.forEach(item => {
     item.closest(".filter__btn").setAttribute("aria-expanded", false);
   });
 });
+
+
+
+
+

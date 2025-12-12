@@ -1,0 +1,161 @@
+/* ===== SCENES PANEL ===== */
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 42px;
+}
+
+
+.scenes-panel {
+  width: 328px;
+  margin: 30px auto 0;
+  background: var(--color-yellow-soft); /* #FDF3CD */
+  border-radius: 20px;
+  padding: 21px 0 42px; /* top 21px, bottom 42px */
+  position: relative;
+}
+
+
+.scenes-panel__title {
+  width: 124px;
+  margin: 0 auto; /* по центру */
+  color: var(--color-accent-red);
+  text-align: center;
+  font-family: var(--font-primary);
+  font-size: var(--fs-xl); /* 24px */
+  font-weight: var(--fw-regular);
+  line-height: 95%;
+  letter-spacing: 0.96px;
+}
+
+/* ===== SCENE BLOCK (общий) ===== */
+.scene-block {
+  width: 291.429px; /* внутренняя карточка по ширине изображения */
+  margin: 20px 18px 0 18px; /* 90px сверху от панели, 18px слева/справа */
+  position: relative;
+  
+}
+
+/* Заголовок блока (цветная плашка) */
+.scene-block__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -23px;
+  
+  
+}
+
+.scene-block__label {
+  width: 200px;
+  height: 55px;
+  background: #FFD226;
+  border-radius: 12px;
+  padding: 0 12px;
+  display: flex;
+  align-items:first baseline;
+  color: var(--color-text-main);
+  font-family: var(--font-primary);
+  font-size: var(--fs-md); /* 16px */
+  
+}
+
+/* Изображение сцены */
+.scene-block__img {
+  width: 291.429px;
+  height: 153px;
+  aspect-ratio: 291.43/153.00;
+  border-radius: 20px;
+  display: block;
+  object-fit: cover;
+  background-color: lightgray;
+}
+
+.scene-block__location {
+  position: absolute;
+  top: 183px; /* точка относительно плашки, подстраивай */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;  /* увеличиваем */
+  height: 40px; /* увеличиваем */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scene-block__location img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Day buttons */
+.scene-filters {
+  display: flex;
+  gap: 46px;
+  margin-top: 32px;
+  padding-left: 18px;
+}
+
+.scene-filters__btn {
+  width: 57px; 
+  height: 22px;
+  border-radius: 20px;
+  background: var(--color-bg-menu); /* #FBF9F6 */
+  box-shadow: 3px 7px 14px 0 var(--color-yellow-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-main);
+  font-family: var(--font-primary);
+  font-size: var(--fs-md);
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Активное состояние */
+.scene-filters__btn.is-active {
+  background: var(--color-bg-header); /* #F8EEE2 */
+}
+
+/* ===== ARTISTS ROW ===== */
+.scene-artists {
+  margin-top: 20px;
+}
+
+.scene-artists__row {
+  display: flex;
+  gap: 63px;
+  justify-content: flex-start;
+  padding-left: 5px; /* левый отступ для первой картинки */
+}
+
+.scene-artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.scene-artist__img {
+  width: 40px;
+  height: 40px;
+  border-radius: 32px;
+  background-size: cover;
+  background-position: center;
+  background-color: lightgray;
+}
+
+.scene-artist__name {
+  margin-top: 2px;
+  color: var(--color-text-main);
+  font-family: var(--font-primary);
+  font-size: var(--fs-xs); /* 11px */
+  line-height: 113.1%;
+}
+
+

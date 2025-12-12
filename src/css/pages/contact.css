@@ -1,0 +1,168 @@
+/* ===== PAGE TITLE ===== */
+.page-title {
+  text-align: center;
+  margin-top: 53px;
+}
+
+.page-title h2 {
+  width: 263px;
+  height: 21px;
+  margin: 0 auto;
+  color: #E34343;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_3, 24px);
+  font-weight: var(--FontFamily_1-FontWeights-Weight_2, 400);
+  line-height: 95%;
+  letter-spacing: 0.96px;
+}
+
+.page-subtitle {
+  width: 325px;
+  height: 57px;
+  margin: 23px auto 0;
+  text-align: left;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_6, 14px);
+  font-weight: var(--FontFamily_1-FontWeights-Weight_2, 400);
+  line-height: normal;
+  color: #534F4B;
+}
+
+.page-subtitle .highlight {
+  color: #FFD226;
+}
+
+/* ===== FORMULAIRE ===== */
+.contact-form-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.contact-form {
+  width: 328px;
+  border-radius: 20px;
+  background: #FDF3CD;
+  box-shadow: 3px 7px 14px rgba(0,0,0,0.25);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+
+
+/* Поля формы */
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_5, 16px);
+  color: #534F4B;
+  margin-bottom: 5px;
+}
+
+.form-field input,
+.form-field textarea {
+  border: 1px solid #FFD226;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_6, 14px);
+  color: #534F4B;
+  background: #FFF9AB;
+}
+
+/* Кнопка отправить */
+.btn-send {
+  width: 137px;
+  height: 38px;
+  margin: 18px auto 0;
+  background: #FFD226;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-send span {
+  width: 63px;
+  height: 20px;
+  text-align: center;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_5, 16px);
+  color: #534F4B;
+}
+
+/* ===== CONTACT INFO ===== */
+.contact-info {
+  width: 325px;
+  margin: 40px auto 0;
+  text-align: left;
+}
+
+.contact-info h3 {
+  color: #E34343;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_3, 24px);
+  font-weight: var(--FontFamily_1-FontWeights-Weight_2, 400);
+  line-height: 95%;
+  letter-spacing: 0.96px;
+}
+
+.contact-info p {
+  margin-top: 22px;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_6, 14px);
+  line-height: normal;
+  color: #534F4B;
+}
+
+.contact-info p .highlight {
+  color: #FFD226;
+}
+
+/* ===== SOCIAL SECTION ===== */
+.social-section {
+  width: 325px;
+  margin: 30px auto 0;
+  text-align: left;
+}
+
+.social-section h3 {
+  color: #E34343;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_3, 24px);
+  font-weight: var(--FontFamily_1-FontWeights-Weight_2, 400);
+  line-height: 95%;
+  letter-spacing: 0.96px;
+}
+
+.social-section p {
+  margin-top: 27px;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_6, 14px);
+  line-height: normal;
+  color: #534F4B;
+}
+
+/* Соц. иконки */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 27px;
+  margin-top: 27px;
+}
+
+.social-icons img {
+  width: 36px;
+  height: 37px;
+  margin-bottom: 40px;
+}
+
+
