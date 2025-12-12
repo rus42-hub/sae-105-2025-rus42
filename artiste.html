@@ -80,17 +80,12 @@
       </nav>
     </header>
 
-
-   <main>
+   <main style="background: #534F4B; color: #F8EEE2;">
 
   <!-- ===== HERO IMAGE ===== -->
   <section class="artist-hero">
     <img src="/assets/img/matteo-mancuso.jpg" alt="Matteo Mancuso" class="artist-hero__img"/>
-
-    <!-- Name overlay on photo -->
-    <div class="artist-hero__name">
-      Matteo Mancuso
-    </div>
+    <div class="artist-hero__name">Matteo Mancuso</div>
   </section>
 
   <!-- ===== DOUBLE LINES ===== -->
@@ -98,7 +93,6 @@
     <span class="artist-lines__line"></span>
     <span class="artist-lines__line"></span>
   </div>
-
 
   <!-- ===== ABOUT SECTION ===== -->
   <section class="artist-about">
@@ -109,30 +103,25 @@
     </p>
   </section>
 
-
   <!-- ===== CONCERT INFO SECTION ===== -->
   <section class="artist-concert">
-
-    <h2 class="artist-concert__title">Concert</h2>
-
-    <ul class="artist-concert__list">
-
-      <li class="artist-concert__item">
-        <img src="/assets/icons/icon-location.svg" alt="Lieu" class="artist-concert__icon"/>
-        <span class="artist-concert__text">Scène : La Roselière</span>
-      </li>
-
-      <li class="artist-concert__item">
-        <img src="/assets/icons/icon-calendar.svg" alt="Date" class="artist-concert__icon"/>
-        <span class="artist-concert__text">Jour : 26, 28 juin</span>
-      </li>
-
-      <li class="artist-concert__item">
-        <img src="/assets/icons/icon-clock.svg" alt="Heure" class="artist-concert__icon"/>
-        <span class="artist-concert__text">Heure : 20h30</span>
-      </li>
-
-    </ul>
+    <div class="concert-card">
+      <h3 class="concert-card__title">Concert</h3>
+      <ul class="concert-card__list">
+        <li class="concert-card__item">
+          <img src="/assets/icons/icon-location.svg" alt="Lieu" class="concert-card__icon"/>
+          <span class="concert-card__text">Scène : La Roselière</span>
+        </li>
+        <li class="concert-card__item">
+          <img src="/assets/icons/icon-calendar.svg" alt="Date" class="concert-card__icon"/>
+          <span class="concert-card__text">Jour : 26, 28 juin</span>
+        </li>
+        <li class="concert-card__item">
+          <img src="/assets/icons/icon-clock.svg" alt="Heure" class="concert-card__icon"/>
+          <span class="concert-card__text">Heure : 20h30</span>
+        </li>
+      </ul>
+    </div>
 
     <!-- ===== YOUTUBE VIDEO ===== -->
     <div class="artist-video">
@@ -145,18 +134,13 @@
         allowfullscreen>
       </iframe>
     </div>
-
   </section>
-
 
   <!-- ===== STYLE SECTION ===== -->
   <section class="artist-style">
     <h2 class="artist-style__title">Style musical</h2>
-    <p class="artist-style__text">
-      Jazz fusion · Guitare moderne · Improvisation
-    </p>
+    <p class="artist-style__text">Jazz fusion · Guitare moderne · Improvisation</p>
   </section>
-
 
   <!-- ===== BACK BUTTON ===== -->
   <section class="artist-back">
@@ -166,39 +150,58 @@
     </a>
   </section>
 
-   </main>
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
+</main>
 
-    <div class="footer__top">
-      <a class="footer__logo" href="/index.html">
-        <img src="/assets/img/logo-festival.svg" alt="Logo du festival"/>
+
+   <!-- ===== FOOTER ===== -->
+<footer class="footer">
+
+  <!-- Logo + social -->
+  <div class="footer__top">
+
+    <img src="assets/img/logo-festival.svg" alt="Logo du festival" class="footer__logo">
+
+    <div class="footer__socials">
+      <a href="#" aria-label="Email">
+        <img src="assets/icons/icon-mail.svg" alt="Email">
       </a>
 
-      <div class="footer__socials">
-        <a href="mailto:contact@example.com"><img src="/assets/icons/icon-mail.svg" alt="Mail"/></a>
-        <a href="#"><img src="/assets/icons/icon-youtube.svg" alt="YouTube"/></a>
-        <a href="#"><img src="/assets/icons/icon-instagram.svg" alt="Instagram"/></a>
-        <a href="#"><img src="/assets/icons/icon-tiktok.svg" alt="TikTok"/></a>
-        <a href="#"><img src="/assets/icons/icon-facebook.svg" alt="Facebook"/></a>
-      </div>
+      <a href="#" aria-label="YouTube">
+        <img src="assets/icons/icon-youtube.svg" alt="YouTube">
+      </a>
+
+      <a href="#" aria-label="Instagram">
+        <img src="assets/icons/icon-instagram.svg" alt="Instagram">
+      </a>
+
+      <a href="#" aria-label="TikTok">
+        <img src="assets/icons/icon-tiktok.svg" alt="TikTok">
+      </a>
+
+      <a href="#" aria-label="Facebook">
+        <img src="assets/icons/icon-facebook.svg" alt="Facebook">
+      </a>
     </div>
 
-    <div class="footer__middle">
-      <p>Conditions générales</p>
-      <p>Gérer les cookies</p>
-    </div>
+  </div>
 
-    <div class="footer__bottom">
-      <p>
-        Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département
-        <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank">
-          MMi de Montbéliard
-        </a>
-      </p>
-    </div>
+  <!-- Legal links -->
+  <div class="footer__links">
+    <a href="#" class="footer__link">Conditions générales</a>
+    <a href="#" class="footer__link">Gérer les cookies</a>
+  </div>
 
-  </footer>
+  <!-- Bottom text -->
+  <div class="footer__bottom">
+    <p>
+      Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département 
+      <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank">
+        MMi de Montbéliard
+      </a>
+    </p>
+  </div>
+
+</footer>
 
 </body>
 </html>

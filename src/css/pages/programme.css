@@ -10,7 +10,7 @@
   margin-bottom: 200px;
 }
 
-/* Заголовок Programme */
+
 .programme-panel__title {
   width: 139px;
   
@@ -83,7 +83,7 @@
 .artists-grid {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 0 0 34px; /* отступ слева для первой фотки */
+  margin: 20px 0 0 34px; 
   gap: 36px 36px;
 }
 

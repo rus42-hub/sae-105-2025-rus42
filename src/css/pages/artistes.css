@@ -1,0 +1,117 @@
+/* ===== PAGE TITLE ===== */
+.page-title {
+  text-align: center;
+  margin-top: 53px;
+  margin-bottom: 27px;
+}
+
+.page-title h1 {
+  width: 139px;
+  height: 21px;
+  margin: 0 auto;
+  color: #E34343;
+  text-align: center;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_3, 24px);
+  font-weight: var(--FontFamily_1-FontWeights-Weight_2, 400);
+  line-height: 95%;
+  letter-spacing: 0.96px;
+}
+
+/* ===== ARTIST SECTION ===== */
+.artists-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 27px;
+  margin-bottom: 27px;
+}
+
+.artist-section {
+  display: flex;
+  width: 328px;
+  height: 167px;
+  border-radius: 20px;
+  background: #534F4B;
+  overflow: hidden;
+}
+
+.artist-photo {
+  width: 123px;
+  height: 167px;
+  border-radius: 20px 0 0 20px;
+  background-color: lightgray;
+  background-size: cover;
+  background-position: center;
+}
+
+.artist-info {
+  flex: 1;
+  padding-left: 15px;
+  padding-top: 10px;
+  color: #F8EEE2;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_7, 11px);
+  line-height: 113.1%;
+  position: relative;
+}
+
+/* Заголовок + кнопка */
+.artist-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.artist-name {
+  width: 73px;
+  height: 16px;
+  color: #FFD226;
+  font-size: var(--FontFamily_2-FontSizes-FontSize_5, 16px);
+  line-height: 113.1%;
+}
+
+.artist-link {
+  margin-left: 75px;
+  margin-top: 13px;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.artist-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.artist-meta span {
+  font-size: var(--FontFamily_2-FontSizes-FontSize_7, 11px);
+}
+
+.artist-meta .artist-scene {
+  margin-top: 7px;
+}
+
+/* Линия */
+.artist-divider {
+  width: 174px;
+  height: 0.5px;
+  background: rgba(255, 210, 38, 0.39);
+  margin-top: 14px;
+  margin-left: 16px;
+}
+
+/* Описание */
+.artist-description {
+  width: 162px;
+  height: 52px;
+  margin-top: 10px;
+  margin-left: 16px;
+  font-size: var(--FontFamily_2-FontSizes-FontSize_7, 11px);
+  line-height: 113.1%;
+  color: #F8EEE2;
+}

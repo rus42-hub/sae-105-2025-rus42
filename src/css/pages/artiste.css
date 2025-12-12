@@ -1,0 +1,214 @@
+/* ===== HERO IMAGE ===== */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background: #534F4B;
+  color: #F8EEE2;
+  min-height: 100%; 
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.artist-hero {
+  position: relative;
+  width: 100%;
+}
+
+.artist-hero__img {
+  width: 100%;
+  display: block;
+}
+
+.artist-hero__name {
+  position: absolute;
+  top: 335px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 357px;
+  height: 38.845px;
+  text-align: center;
+  color: #F8EEE2;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: 44.394px;
+  font-weight: var(--FontFamily_1-FontWeights-Weight_2, 400);
+  line-height: 95%;
+  letter-spacing: 1.776px;
+}
+
+/* ===== DOUBLE LINES ===== */
+.artist-lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  margin-top: 13px;
+}
+
+.artist-lines__line {
+  width: 393px;
+  height: 2px;
+  background: #E34343;
+}
+
+/* ===== ABOUT SECTION ===== */
+.artist-about {
+  margin-top: 20px;
+}
+
+.artist-about__title {
+  margin-left: 51px;
+  color: #F8EEE2;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: 21.6px;
+  font-weight: var(--FontFamily_1-FontWeights-Weight_2, 400);
+  line-height: 127%;
+  letter-spacing: 0.864px;
+}
+
+.artist-about__text {
+  width: 293px;
+  height: 141px;
+  margin-left: 51px;
+  margin-top: 10px;
+  color: #F8EEE2;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_5, 16px);
+  line-height: 127%;
+  letter-spacing: 0.64px;
+}
+
+/* ===== CONCERT CARD ===== */
+.concert-card {
+  width: 328px;
+  height: 124px;
+  background: #E34343;
+  border-radius: 20px 20px 0 0; /* top-left top-right bottom-right bottom-left */
+  margin: 30px 0 0 30px;
+  padding: 7px;
+  position: relative;
+}
+
+.concert-card__title {
+  margin-left: 21px;
+  margin-top: 15px;
+  color: #FFD226;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: 20.174px;
+  font-weight: var(--FontFamily_1-FontWeights-Weight_2, 400);
+  line-height: 113.1%;
+}
+
+.concert-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.concert-card__item {
+  display: flex;
+  align-items: center;
+}
+
+.concert-card__icon {
+  width: 10px;
+  height: 10px;
+  margin-left: 21px;
+  margin-top: 0;
+}
+
+.concert-card__item:nth-child(1) .concert-card__icon { margin-top: 5px; }
+.concert-card__item:nth-child(2) .concert-card__icon { margin-top: 7px; }
+.concert-card__item:nth-child(3) .concert-card__icon { margin-top: 7px; }
+
+.concert-card__text {
+  color: #F8EEE2;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_5, 16px);
+  line-height: 127%;
+  letter-spacing: 0.64px;
+  margin-left: 8px;
+}
+
+/* ===== VIDEO ===== */
+.artist-video {
+  width: 100%;
+  margin-top: 0px;
+}
+
+.artist-video__iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+/* ===== STYLE SECTION ===== */
+.artist-style {
+  margin-top: 30px;
+}
+
+.artist-style__title {
+  margin-left: 51px;
+  color: #F8EEE2;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: 21.6px;
+  font-weight: var(--FontFamily_1-FontWeights-Weight_2, 400);
+  line-height: 127%;
+  letter-spacing: 0.864px;
+}
+
+.artist-style__text {
+  margin-left: 51px;
+  margin-top: 15px;
+  color: #F8EEE2;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_5, 16px);
+  line-height: 127%;
+  letter-spacing: 0.64px;
+  width: 293px;
+  height: 40px;
+}
+
+/* ===== BACK BUTTON ===== */
+.artist-back {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+  margin-bottom: 52px;
+}
+
+.artist-back__btn {
+  display: flex;
+  align-items: flex-start;
+  width: 235px;
+  height: 40px;
+  border-radius: 8px;
+  background: #E34343;
+  padding: 0;
+  position: relative;
+  text-decoration: none;
+}
+
+.artist-back__icon {
+  width: 27px;
+  height: 27px;
+  margin-left: 8px;
+  margin-top: 6px;
+}
+
+.artist-back__text {
+  color: #F8EEE2;
+  font-family: var(--FontFamily_2-FontFamily-FontFamily, "DM Serif Text");
+  font-size: var(--FontFamily_2-FontSizes-FontSize_5, 16px);
+  font-weight: var(--FontFamily_1-FontWeights-Weight_2, 400);
+  line-height: 127%;
+  letter-spacing: 0.64px;
+  margin-left: 18px;
+  margin-top: 8px;
+}
